@@ -1,6 +1,6 @@
 body {
     background: url(img/mapimg.jpg);
-   
+  
 }
 
 header {
@@ -11,6 +11,9 @@ header {
     
 }
 
+.vini-strong {
+    color: #2e6aa1;
+}
 .a-header {
     text-decoration: none;
     color: white;
@@ -133,13 +136,6 @@ margin-bottom: 0;
 
 }
 
-.div-icon {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 40px;
-}
-
 .icon-card {
     width: 40px;
     background-color: #2e6aa1;
@@ -148,7 +144,7 @@ margin-bottom: 0;
 }
 
 .project-img {
-    height: 350px;
+   height: 300px;
 }
 
 .p-alura {
@@ -163,6 +159,145 @@ margin-bottom: 0;
     padding: 0.8em 2em;
     border: 4px solid #2e6aa1;
     border-radius: 18px;
+}
+
+.ul-skills {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+}
+
+.li-skills {
+    border: 2px solid white;
+    width: 9em;
+    border-radius: 12px;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8em;
+    display: flex;
+    flex-direction: column;
+    color: #2e6aa1;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: "Viga";
+    transition: all 0.6s ease;
+}
+
+.li-skills:hover {
+    transform: scale(1.1);
+}
+
+.section-about  {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+}
+
+.div-about {
+justify-content: center;
+border: 5px solid #2e6aa1;
+border-radius: 12px;
+padding: 10px;
+}
+
+
+
+.div-img {
+    justify-content: center;
+    
+}
+
+.img-about {
+height: 500px;
+width: 500px;
+border-radius: 12px;
+border: 2px solid white;
+}
+
+.h2-about {
+    max-width: 700px;
+    color: white;
+    text-align: center;
+    font-family: "Viga";
+}
+
+footer {
+text-align: center;
+margin-top: 2em;
+
+}
+
+.ancora-footer {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 8px;
+}
+
+.div-bigText {
+    margin-top: 5em;
+    border: 2px solid #2e6aa1;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    width:75%;
+    justify-content: center;
+    align-items: center;
+     margin: 30px auto;     
+
+}
+
+.bigText {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+.strong-name {
+    color: #2e6aa1;
+}
+
+.div-contact {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 4px;
+    margin: 2em;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img-contact {
+    width: 60px;
+    background-color: #2e6aa1;
+    border: white;
+    border-radius: 12px;
+}
+
+
+.contact-box {
+    background-color: white;
+    justify-content: center;
+    margin: 30px auto;
+    width: 50%;
+    padding: 2em;
+    border: 1px solid white;
+    border-radius: 18px;
+}
+
+.contact-p {
+    font-family: "Viga";
+    font-weight: 100;
+}
+
+.contact-strong {
+    color: #2e6aa1;
 }
 
 @media screen and (max-width: 890px) {
@@ -191,6 +326,18 @@ margin-bottom: 0;
      
     }
 
+    .ul-skills {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .li-skills {
+        width: 100%;
+    }
    
 
     .div-projects {
@@ -202,4 +349,30 @@ margin-bottom: 0;
     .div-card {
         max-width: 400px;
     }
+
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        gap: 1em;
+    }
+
+    .img-about {
+        width: fit-content;
+       
+    }
+}
+
+
+@media (max-width: 1600px) {
+  body {
+    max-width: 600px;
+  }
+
+  .section-about {
+    display: flex;
+  }
 }
