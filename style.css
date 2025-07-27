@@ -214,6 +214,8 @@ h2, h3, p {
 .img-about {
     height: 500px;
     width: 500px;
+    display: flex;
+    align-items: center;
     margin: 0 auto;
     border-radius: 12px;
     border: 2px solid white;
@@ -229,11 +231,11 @@ h2, h3, p {
 
 .div-bigText {
     margin-top: 5em;
-    border: 2px solid #2e6aa1;
+    border: 5px solid white;
     padding: 15px;
     text-align: center;
     border-radius: 12px;
-    width: 75%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     margin: 30px auto;
@@ -289,17 +291,7 @@ h2, h3, p {
 }
 
 
-footer {
-    text-align: center;
-    margin-top: 2em;
-}
 
-.ancora-footer {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    margin: 8px;
-}
 
 @media screen and (max-width: 890px) {
 
@@ -310,7 +302,7 @@ footer {
     }
 
     .vini-img {
-        width: 100%;
+        width: 375px;
         height: 400px;
         margin: 0 auto;
     }
@@ -329,12 +321,15 @@ footer {
     .ul-skills {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 1em;
     }
 
     .li-skills {
-        width: 80%;
-        margin: -10px;
+        width: 70%;
+        
+        
     }
 
     .div-card {
@@ -352,7 +347,10 @@ footer {
     }
 
     .img-about {
-        width: fit-content;
+         width: 375px;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 1em;
     }
 }
 
